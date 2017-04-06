@@ -18,7 +18,7 @@ def read_text_as_json():
 
 
 workbook = xlwt.Workbook(encoding='utf-8')
-table = workbook.add_sheet('Sheet1')
+table = workbook.add_sheet('student')
 
 if __name__ == '__main__':
     print(read_text_as_json())
