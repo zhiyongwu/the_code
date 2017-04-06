@@ -2,7 +2,8 @@
 做为 Apple Store App 独立开发者，你要搞限时促销，为你的应用生成激活码（或者优惠券），使用 Python 如何生成 200 个激活码（或者优惠券）？
 code_len = 16
 """
-import string, random
+import string
+import random
 
 result_set = set()
 
@@ -23,6 +24,7 @@ def generate_code_limit(num):
 def generate_200_code():
     generate_code_limit(200)
     return result_set
+
 
 if __name__ == '__main__':
     while len(result_set) < 200:
